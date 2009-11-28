@@ -1,0 +1,8 @@
+# ingore all directories and files in a directory
+./svn
+.svn/**/*
+#ignore files, wildcard
+*.pyc
+*.html
+*.htm
+*~ # ingore all files and directories ending with a tilde (~), i.e. backup files
