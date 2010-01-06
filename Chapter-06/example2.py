@@ -1,6 +1,9 @@
 import wx
 from example1 import SketchWindow
 
+"""
+add and refresh a status bar
+"""
 
 class SketchFrame(wx.Frame):
     def __init__(self, parent):

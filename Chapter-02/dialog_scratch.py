@@ -25,12 +25,13 @@ class App(wx.App):
                ['1.5.2', '2.0', '2.1.3', '2.2', '2.3.1'])
         if dlg.ShowModal() == wx.ID_OK:
             response = dlg.GetStringSelection()
+            print response
         dlg.Destroy()
 
         return True
 
 
 if __name__ == '__main__':
-    app = App(False, "output")
+    app = App(True, "output")
     fred = app.MainLoop()
     

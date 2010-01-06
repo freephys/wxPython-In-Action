@@ -4,11 +4,11 @@
 
 import wx
 
-class Frame(wx.Frame):
+class Frame(wx.Frame): #2
     """Frame class that displays an image."""
 
     def __init__(self, image, parent=None, id=-1,
-                 pos=wx.DefaultPosition, title='Hello, wxPython!'):
+                 pos=wx.DefaultPosition, title='Hello, wxPython!'): #3
         """Create a Frame instance and display image."""
         temp = image.ConvertToBitmap()
         size = temp.GetWidth(), temp.GetHeight()

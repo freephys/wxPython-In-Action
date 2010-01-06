@@ -1,0 +1,18 @@
+#
+# File:       makefile.b32
+# Author:     Robert Roebling
+# Created:    2000
+# Copyright:  (c) 2000 Robert Roebling
+#
+# Makefile for wxDesigner sample for 32-bit Borland C++
+
+WXDIR = $(WXWIN)
+
+TARGET = spacer
+
+RESOURCE = $(TARGET)_wdr
+
+OBJECTS = $(TARGET).obj $(RESOURCE).obj
+
+!include $(WXDIR)\src\makeprog.b32
+

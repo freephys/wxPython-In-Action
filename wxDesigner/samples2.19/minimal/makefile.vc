@@ -1,0 +1,26 @@
+#
+# File:        makefile.vc
+# Author:      Robert Roebling
+# Created:     2000
+# Copyright:   (c) Robert Roebling
+#
+# Makefile for wxDesigner sample for MS Visual C++ (WIN32)
+# Use FINAL=1 argument to nmake to build final version with no debug info.
+
+# Set WXDIR for your system
+WXDIR = $(WXWIN)
+
+PROGRAM = minimal
+
+RESOURCE = $(PROGRAM)_wdr
+
+OBJECTS = $(PROGRAM).obj $(RESOURCE).obj
+
+!include $(WXDIR)\src\makeprog.vc
+
+# For broken VC++ 4
+noopt:
+	cl @<<
+$(CPPFLAGS2) /Od /c /Tp $(PROGRAM).cpp
+<<
+

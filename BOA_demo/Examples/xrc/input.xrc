@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<resource>
+  <object class="wxPanel" name="boaXrcPanel">
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxStaticText" name="inputLbl">
+              <label>Input:</label>
+            </object>
+            <border>10</border>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl" name="inputCtrl"/>
+            <border>10</border>
+          </object>
+        </object>
+        <border>20</border>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxCheckBox" name="inputCheck">
+              <label>Check</label>
+            </object>
+            <border>10</border>
+          </object>
+        </object>
+        <option>0</option>
+        <border>20</border>
+      </object>
+    </object>
+  </object>
+</resource>

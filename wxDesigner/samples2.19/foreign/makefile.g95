@@ -1,0 +1,18 @@
+#
+# File:         makefile.g95
+# Author:       Robert Roebling
+# Created:      1999
+# Updated:
+# Copyright:    (c) Robert Roebling, 2000
+#
+# Makefile for wxDesigner sample for GNU C++ (Cygwin/Mingw32)
+
+WXDIR = $(WXWIN)
+
+TARGET = foreign
+
+RESOURCE = $(TARGET)_wdr
+
+OBJECTS = $(TARGET).o $(RESOURCE).o
+
+include $(WXDIR)/src/makeprog.g95
